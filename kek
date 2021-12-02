@@ -1,0 +1,16 @@
+f=open('c:/Users/Statie-17-C100/Desktop/Lista clasei 11D.txt', 'r')
+lsr=list(f)
+f.close()
+c=[]
+n=0
+m=0
+for i, linie in enumerate(lsr):
+    print(i+1, linie, end='')
+m=i+1 
+a=m
+print(a)
+for s, d in enumerate(lsr):
+    x=d.split()
+    n=int(x[2])
+    n, m=n+1, m+n
+print('media celor', a, 'studenti, este', m/float(n))
